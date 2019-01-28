@@ -1,5 +1,5 @@
-mac一般使用bash作为默认shell，如果安装了oh my sh，则默认使用zshshell。
-Mac系统环境变量的加载顺序：
+* mac一般使用bash作为默认shell，如果安装了oh my sh，则默认使用zshshell。
+* Mac系统环境变量的加载顺序：
 
 1. /etc/profile      建议不修改
 2. /etc/paths        全局建议修改这个
@@ -12,8 +12,8 @@ Mac系统环境变量的加载顺序：
 如果~/.bash_profile存在，后面几个文件就会忽略不读，不存在时，才会以此类推读取后面的文件。
 ~/.bashrc没有上述规则，他始终加载，他是在bash shell打开的时候载入的。
 
-设置Path的语法：
+* 设置Path的语法：
 export PATH=$PATH:<PATH 1>:<PATH 2>:<PATH 3>:------:<PATH N>
 
-设置想立刻生效：
+* 设置想立刻生效：
 source 相应的文件
