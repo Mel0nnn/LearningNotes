@@ -1,0 +1,12 @@
+##基础单条件查找
+=VLOOKUP(lookup_value,table_array,col_index_num,range_lookup)
+
+lookup_value  找什么
+table_array   在哪找
+col_index_num 返回第几列
+range_lookup  匹配方式，0精确匹配1模糊匹配
+
+##反向查找
+=VLOOKUP(检索关键字，IF({1,0},检索关键字所在列，查找值所在列)，2，0)
+##多条件查询
+=VLOOKUP(关键字1&关键字2，IF({1,0},序列1&序列2，查找值所在列)，2，0)
